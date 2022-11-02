@@ -2,4 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 
-Nothing here yet...
+<head>
+<title>Project 06 - Fun with Javascript</title>
+
+<script>
+     function glue()
+         {
+        document.querySelector("#full").value = 
+            document.querySelector("#first").value
+          + " "
+          + document.querySelector("#last").value
+      }
+</script>
+
+</head>
+
+<body>
+
+<form name=>
+ First: <input type=text id="first"><br>
+ Last:  <input type=text id="last" 
+                       onchange="glue();"><br>
+ Full:  <input type=text id="full"><br>
+ <input type=reset value="Clear">
+</form>
+
+</body>
+</html>
