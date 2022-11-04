@@ -5,7 +5,7 @@
 <head>
 
 <title>
-Project 06 - Fun with Javascript
+Car Finder
 </title>
 
 <style>
@@ -20,40 +20,52 @@ body {
 </style>
 
 <script>
-     function glue()
-         {
-        document.querySelector("#full").value = 
-            document.querySelector("#first").value
-          + " "
-          + document.querySelector("#last").value
-      }
+
+function glue()
+{
+document.querySelector("#full").value = 
+document.querySelector("#first").value
++ " "
++ document.querySelector("#last").value
+}
+function toyota()
+{
+document.querySelector("#changeText").innerHTML = "Great Choice: "+ document.querySelector("#first").value;
+}
+
 </script>
 
 </head>
 
 <body>
 
-<h1> Welcome to Website </h1>
+<h1> Find your next car! </h1>
 
 <h3> Please note, it is not yet finished, but at least we have a Dark Theme. </h3>
 
 <form name=>
-Something: <input type=text id="first">
+Make: <input type=text id="first" onchange="toyota();">
 <br>
-Something Else:  <input type=text id="last" 
-                       onchange="glue();">
+Model:  <input type=text id="last" onchange="glue();">
 <br>
-Put 'em together:  <input type=text id="full">
+Search:  <input type=text id="full">
+<div id=changeText>
+Selected Make:
+</div>
 <br>
 <br>
 
-<INPUT TYPE=CHECKBOX NAME="option1" VALUE="option1"> Option 1
+
+<h4> Drivetrain: </h4>
+<INPUT TYPE=CHECKBOX NAME="option1" VALUE="option1"> Automatic
 <br>
-<INPUT TYPE=CHECKBOX NAME="option2" VALUE="option2"> Option 2
+<INPUT TYPE=CHECKBOX NAME="option2" VALUE="option2"> Manual
 <br>
-<INPUT TYPE=CHECKBOX NAME="option3" VALUE="option3"> Option 3
+<INPUT TYPE=CHECKBOX NAME="option3" VALUE="option3"> CVT
 <br>
-<INPUT TYPE=CHECKBOX NAME="option4" VALUE="option4"> Option 4
+<INPUT TYPE=CHECKBOX NAME="option4" VALUE="option4"> Dual Clutch
+<br>
+<INPUT TYPE=CHECKBOX NAME="option5" VALUE="option5"> Electric
 <br>
 <br>
 <input type=reset value="Clear">
