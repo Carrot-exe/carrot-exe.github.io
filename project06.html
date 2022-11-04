@@ -32,7 +32,14 @@ function toyota()
 {
 document.querySelector("#changeText").innerHTML = "Great Choice: "+ document.querySelector("#first").value;
 }
-
+function h ()
+{
+alert ("The correct choice.");
+}
+function cvt ()
+{
+alert ("Yuck.");
+}
 </script>
 
 </head>
@@ -57,11 +64,11 @@ Selected Make:
 
 
 <h4> Drivetrain: </h4>
-<INPUT TYPE=CHECKBOX NAME="option1" VALUE="option1"> Automatic
+<INPUT TYPE=CHECKBOX onclick="h();" NAME="option1" VALUE="option1"> Manual
 <br>
-<INPUT TYPE=CHECKBOX NAME="option2" VALUE="option2"> Manual
+<INPUT TYPE=CHECKBOX NAME="option2" VALUE="option2"> Automatic
 <br>
-<INPUT TYPE=CHECKBOX NAME="option3" VALUE="option3"> CVT
+<INPUT TYPE=CHECKBOX onclick="cvt();" NAME="option3" VALUE="option3"> CVT
 <br>
 <INPUT TYPE=CHECKBOX NAME="option4" VALUE="option4"> Dual Clutch
 <br>
