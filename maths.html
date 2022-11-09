@@ -32,6 +32,19 @@ if (bgToggle) {
   }
 }
 
+function doSum()
+ {
+ var sum=0;
+ var N = parseInt( 
+document.querySelector("#N").value );
+ for (i=1; i<=N; i++) {
+ sum += i;
+ }
+ 
+document.querySelector("#sumHere").innerHTML = 
+"Your sum is: "+sum;
+ }
+
 </script>
 
 </head>
@@ -44,6 +57,25 @@ I am really bad at math, that's why I'm taking IT-105 as my math gen-ed.
 <form name="color">
 
 <input type="button" value="Red Mode" onclick="makeRed();">
+
+</form>
+<br>
+<br>
+<br>
+Thankfully, we have a math machine:
+<form name="calculations">
+
+Enter an integer to sum to: <input 
+type=text id="N"><br>
+ <input type=button value="Start the Sum" 
+onclick="doSum();">
+ <div id="sumHere">
+ Your sum is: 
+
+
+<br>
+<br>
+<input type="reset" value="I need to wipe the slate clean."
 
 </form>
 
