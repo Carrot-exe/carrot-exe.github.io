@@ -45,6 +45,35 @@ document.querySelector("#sumHere").innerHTML =
 "Your sum is: "+sum;
  }
 
+function doAdd()
+{
+document.querySelector("#answer").value =
+  parseInt (document.querySelector("#first").value)
+ +parseInt (document.querySelector("#second").value);
+}
+
+function doSubtract()
+{
+document.querySelector("#answer").value =
+  parseInt (document.querySelector("#first").value)
+ -parseInt (document.querySelector("#second").value);
+}
+
+
+function doMultiply()
+{
+document.querySelector("#answer").value =
+  parseInt (document.querySelector("#first").value)
+ *parseInt (document.querySelector("#second").value);
+}
+
+function doDivide()
+{
+document.querySelector("#answer").value = 
+  parseInt (document.querySelector("#first").value)
+ /parseInt (document.querySelector("#second").value);
+}
+
 </script>
 
 </head>
@@ -66,20 +95,20 @@ Thankfully, we have a math machine:
 <br>
 <form name="calculations">
 
-<input type=text>
+<input type=text id="first">
 <input type=button value="+" onClick="doAdd();">
 <input type=button value="-" onClick="doSubtract();">
 <input type=button value="*" onClick="doMultiply();">
 <input type=button value="/" onClick="doDivide();">
-<input type=text>
+<input type=text id="second">
 =
-<input type=text>
+<input type=text id="answer">
 
 <br><br><br>
 
 Enter an integer to sum to: <input 
 type=text id="N"><br>
- <input type=button value="Start the Summation" 
+ <input type=button value="Start the Sum" 
 onclick="doSum();">
  <div id="sumHere">
  Your sum is: 
