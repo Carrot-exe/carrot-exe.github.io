@@ -63,11 +63,23 @@ I am really bad at math, that's why I'm taking IT-105 as my math gen-ed.
 <br>
 <br>
 Thankfully, we have a math machine:
+<br>
 <form name="calculations">
+
+<input type=text>
+<input type=button value="+" onClick="doAdd();">
+<input type=button value="-" onClick="doSubtract();">
+<input type=button value="*" onClick="doMultiply();">
+<input type=button value="/" onClick="doDivide();">
+<input type=text>
+=
+<input type=text>
+
+<br><br><br>
 
 Enter an integer to sum to: <input 
 type=text id="N"><br>
- <input type=button value="Start the Sum" 
+ <input type=button value="Start the Summation" 
 onclick="doSum();">
  <div id="sumHere">
  Your sum is: 
@@ -75,7 +87,7 @@ onclick="doSum();">
 
 <br>
 <br>
-<input type="reset" value="I need to wipe the slate clean."
+<input type="reset" value="I need to wipe the slate clean.">
 
 </form>
 
