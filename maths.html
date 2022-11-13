@@ -45,7 +45,7 @@ document.body.style.backgroundColor = "#F0FF00";
 
 function doSum()
  {
- var sum=0;
+ var sum=parseInt (document.querySelector("#M").value);
  var N = parseInt( 
 document.querySelector("#N").value );
  for (i=1; i<=N; i++) {
@@ -126,8 +126,7 @@ Thankfully, we have a math machine:
 <br><br><br>
 
 Enter an integer at which to start the sum: <input type=text id="M"> <br>
-Enter an integer to sum to: <input 
-type=text id="N"><br>
+Enter an integer to sum to: <input type=text id="N"><br>
  <input type=button value="Start the Sum" 
 onclick="doSum();">
  <div id="sumHere">
