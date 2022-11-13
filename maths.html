@@ -20,17 +20,28 @@ body {
 
 <script>
 
-var bgToggle=true;
+
+function black()
+{
+  document.body.style.backgroundColor = "black";
+}
+
+function white()
+{
+document.body.style.backgroundColor = "white";
+}
+
 function makeRed()
 {
-if (bgToggle) {
-    document.querySelector("body").style.backgroundColor="red";
-    bgToggle=false;
-  } else {
-    document.querySelector("body").style.backgroundColor="black";
-    bgToggle=true;
-  }
+document.body.style.backgroundColor = "red";
 }
+
+function ouch()
+{
+document.body.style.backgroundColor = "#F0FF00";
+}
+
+
 
 function doSum()
  {
@@ -85,12 +96,20 @@ I am really bad at math, that's why I'm taking IT-105 as my math gen-ed.
 
 <form name="color">
 
-<input type="button" value="Red Mode" onclick="makeRed();">
+<h3>Change the background color:</h3>
+
+<input type="button" value="Dark Theme" onclick="black();">
+<input type="button" value="Light Theme (yuck)" onclick="white();">
+<input type="button" value="Red" onclick="makeRed();">
+<input type="button" value="I want to melt my eyes" onclick="ouch();">
+
 
 </form>
+
 <br>
 <br>
 <br>
+
 Thankfully, we have a math machine:
 <br>
 <form name="calculations">
