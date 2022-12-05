@@ -1,11 +1,17 @@
 body {
    background-image: url("bluelobster.jpg");background-repeat:no-repeat;object-fit:cover;background-size:100%;
    font-family: 'papyrus','Courier New', monospace;
-   color: yellow;
+   color: white;
    text-align: center;
   
    
 }
+
+a {
+   font-family: 'papyrus','Courier New', monospace;
+   color: white;
+}
+
 
 h1 {
    color: yellow;
