@@ -5,6 +5,12 @@ body {
    text-align: center;
 }
 
+a {
+   font-family: 'papyrus','Courier New', monospace;
+   color: white;
+}
+
+
 h1 {
    color: yellow;
 }
