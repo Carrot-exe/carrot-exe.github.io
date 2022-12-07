@@ -7,7 +7,15 @@
 <link rel="stylesheet" href="pirates.css"> 
 
 <title> Learn about pirates! </title>
-
+<script>
+    function glue()
+ {
+ document.querySelector(“#pirname”).innerHTML = 
+ "Pirate" + 
+document.querySelector("#name").value;
+ }
+ 
+</script>
 </head>
 
 <body>
@@ -99,10 +107,15 @@ Should you not pick a role, or should none be available, you will be assumed an 
 
 <What be yer pirate name?>
 
+    What be your land name?
+<input type=text id="name">
+<div id="pirname">
+</div>
 <TEXTAREA NAME="comments" ROWS=3 COLS=30>ARRRRGH!</TEXTAREA>
 <br>
 
-<input type="submit" value="Welcome Aboard!">
+<input type="submit" value="Welcome Aboard!" onclick=="glue();">
+>
 <input type="reset" value="Nevermind">
 
 </form>
