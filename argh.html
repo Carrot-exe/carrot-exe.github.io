@@ -14,7 +14,15 @@
  "Pirate" + " " +
 document.querySelector("#name").value;
  }
- 
+ function prevpirate()
+ {
+ if (document.querySelector("#name").value =="Jack Sparrow" ||
+ document.querySelector("#course").value =="Black Beard"){
+ alert("Hey, you're already a pirate!");
+} else {
+ alert(“Now click the Pirate Name box to see your pirate name!”);
+}
+}
 </script>
 </head>
 
@@ -122,7 +130,7 @@ Should you not pick a role, or should none be available, you will be assumed an 
 <What be yer pirate name?>
 
     What be your land name?
-<input type=text id="name">
+<input type=text id="name" onchange="prevpirate();">
 <br>
 <input type="button" value="Pirate Name" onclick="glue();">
 
