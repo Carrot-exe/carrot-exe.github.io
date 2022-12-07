@@ -10,9 +10,9 @@
 <script>
     function glue()
  {
- document.querySelector(#pirname).innerHTML = 
+ document.querySelector("#pirname").innerHTML = 
  "Pirate" + 
-document.querySelector(#name).value;
+document.querySelector("#name").value;
  }
  
 </script>
@@ -105,23 +105,29 @@ If so, fill out the form:
 Should you not pick a role, or should none be available, you will be assumed an Able-Bodied Sailor.
 <br>
 
-<What be yer pirate name?>
-
-    What be your land name?
-<input type=text id=name>
-<div id=pirname>
-    Ahoy!
-</div>
 <TEXTAREA NAME="comments" ROWS=3 COLS=30>ARRRRGH!</TEXTAREA>
 <br>
 
-<input type="submit" value="Welcome Aboard!" onclick="glue();">
+<input type="submit" value="Welcome Aboard!">
 
 <input type="reset" value="Nevermind">
 
 </form>
 <br>
+<div id="pirname">
+    Ahoy!
+</div>
+<br>
 
+<What be yer pirate name?>
+
+    What be your land name?
+<input type=text id="name">
+<br>
+<input type="button" value="Pirate Name" onclick="glue();">
+
+<br>
+<br>
 Are ye literate? Here be further reading:
 <br>
 <a href="encyclopedia.pdf">Will's excellent Pirate Encyclopedia</a>
