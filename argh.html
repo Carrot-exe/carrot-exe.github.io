@@ -8,13 +8,19 @@
 
 <title> Learn about pirates! </title>
 <script>
-    function glue()
+  
+  function prev()
  {
- document.querySelector("#pirname").innerHTML = 
+   if (document.querySelector("#name").value == "Black Beard") {
+     alert("You're already a real pirate!");
+   } else {
+    document.querySelector("#pirname").innerHTML = 
  "Pirate" + " " +
 document.querySelector("#name").value;
+   }
  }
- 
+
+
 </script>
 </head>
 
@@ -124,7 +130,7 @@ Should you not pick a role, or should none be available, you will be assumed an 
     What be your land name?
 <input type=text id="name" >
 <br>
-<input type="button" value="Pirate Name" onclick="glue();">
+<input type="button" value="Pirate Name" onclick="prev()";>
 
 <br>
 <br>
